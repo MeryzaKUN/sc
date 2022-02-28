@@ -6324,17 +6324,17 @@ break
                 reply(`Sukses mengganti nama ke ${body.slice(9)}`)
                 break                
              case 'add':
-if (!isGroup) return fakeyt(mess.only.group)
-if (!isGroupAdmins && !mek.key.fromMe) return fakeyt(mess.only.admin)
-if (!isBotGroupAdmins) return fakeyt(mess.only.Badmin)
-if (args.length < 1) return fakeyt('Yang mau di add siapa??')
-if (args[0].startsWith('08')) return fakeyt('Gunakan kode negara Gan')
+if (!isGroup) return replay(mess.only.group)
+if (!isGroupAdmins && !mek.key.fromMe) return replay(mess.only.admin)
+if (!isBotGroupAdmins) return replay(mess.only.Badmin)
+if (args.length < 1) return replay('Yang mau di add siapa??')
+if (args[0].startsWith('08')) return replay('Gunakan kode negara Gan')
 try {
 num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 herman.groupAdd(from, [num])
 } catch (e) {
 console.log('Error :', e)
-fakeyt('Gagal menambahkan target, mungkin karena di private')
+replay('Gagal menambahkan target, mungkin karena di private')
 }
 			break
 	
