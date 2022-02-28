@@ -6331,7 +6331,7 @@ if (args.length < 1) return replay('Yang mau di add siapa??')
 if (args[0].startsWith('08')) return replay('Gunakan kode negara Gan')
 try {
 num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
-herman.groupAdd(from, [num])
+kurr.groupAdd(from, [num])
 } catch (e) {
 console.log('Error :', e)
 replay('Gagal menambahkan target, mungkin karena di private')
