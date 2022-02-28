@@ -3892,8 +3892,8 @@ sendButLocation(from, `${menu}`, "*_© STORE BOTZ ゑ_*", {jpegThumbnail:dana,na
 break
 case 'gopay':
 menu = `NO GOPAY:
-089509635137
-A/N Meryza Store
+081649483479
+A/N AW
 LALU KLIK TOMBOL DI BAWAH 
 DAN KIRIM BUKTI TF KE KONTAK TERSEBUT
  `
